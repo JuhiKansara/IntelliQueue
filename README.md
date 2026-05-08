@@ -1,30 +1,60 @@
-# IntelliQueue
-IntelliQueue Simulator is a Java-based desktop project that simulates CPU scheduling algorithms like FCFS, SJF, Priority, and Round Robin using Swing, helping visualize process execution and scheduling behavior.
+# IntelliQueue 🚀
 
-⚙️ Technologies Used
-Java (Core Java)
-Swing (GUI)
-Java Collections Framework (JCF)
+**IntelliQueue** is a modern, real-time Queue Management Simulator built using Java Swing. It provides a thread-safe, interactive environment to manage and visualize customer flow with priority handling.
 
-🚀 Features
-Simulates multiple CPU scheduling algorithms
-Calculates waiting time and turnaround time
-Interactive GUI using Swing
-Easy input of process details
-Visual understanding of process execution flow
+## ✨ Features
 
-📂 Project Structure
-src/ – Contains all Java source code
-ui/ – Swing-based user interface classes
-logic/ – Scheduling algorithm implementations
+- **Real-time Simulation**: Watch customers being served with live countdowns and progress bars.
+- **Dual-Counter System**: 
+  - **Counter 1**: Dedicated to the Normal queue.
+  - **Counter 2**: Dedicated to the Senior/Priority queue.
+- **Priority Logic**: Intelligent handling of Senior vs. Normal customers.
+- **Live Statistics**: Track total served, average wait times, and current queue lengths in real-time.
+- **Modern UI**: Clean, card-based design with progress bars and smooth updates.
+- **Graceful Shutdown**: Thread-safe cleanup when closing the application.
+- **Audio Feedback**: Sound notifications upon service completion.
 
-🧠 Learning Outcome
-Understanding of OS scheduling concepts
-Hands-on experience with Java Swing GUI
-Implementation of real-world algorithms
+## 🛠️ Technology Stack
 
-▶️ How to Run
-Clone the repository
-Open project in any Java IDE (IntelliJ / Eclipse / VS Code)
-Run the main class
-Enter process details and select scheduling algorithm
+- **Language**: Java 17+
+- **UI Framework**: Java Swing & AWT
+- **Architecture**: MVC (Model-View-Controller)
+- **Concurrency**: Multi-threaded processing with dedicated counter threads.
+
+## 🚀 Getting Started
+
+### Prerequisites
+- Java Development Kit (JDK) 17 or higher installed.
+
+### How to Run
+1. Clone the repository:
+   ```bash
+   git clone <your-repo-url>
+   ```
+2. Navigate to the project folder:
+   ```bash
+   cd IntelliQueue
+   ```
+3. Compile the project:
+   ```bash
+   javac -d bin -sourcepath src src/Main.java
+   ```
+4. Run the application:
+   ```bash
+   java -cp bin Main
+   ```
+
+## 📂 Project Structure
+
+```text
+IntelliQueue/
+├── src/
+│   ├── controller/   # Handles business logic and thread management
+│   ├── model/        # Data structures for customers and queues
+│   ├── view/         # UI components and layout
+│   └── Main.java     # Application entry point
+└── .gitignore        # Standard Java ignore rules
+```
+
+## 📄 License
+This project is open-source and available under the [MIT License](LICENSE).
